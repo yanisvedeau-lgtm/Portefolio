@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio | [Ton Nom]</title>
+    <style>
+        /* Styles de base */
+        :root {
+            --primary-color: #2563eb;
+            --dark-color: #1e293b;
+            --light-color: #f8fafc;
+            --text-color: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--dark-color);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: white; text-decoration: none; transition: 0.3s; }
+        nav a:hover { color: var(--primary-color); }
+
+        /* Hero Section */
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            padding: 0 20px;
+        }
+
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+
+        /* Sections */
+        section { padding: 4rem 10%; }
+        h2 { text-align: center; margin-bottom: 2rem; color: var(--dark-color); }
+
+        /* Grille de projets */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 { margin-top: 0; color: var(--primary-color); }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MonPortfolio</div>
+        <ul>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Bonjour, je suis [Ton Nom]</h1>
+        <p>Développeur Fullstack | Passionné par la création de solutions numériques</p>
+    </header>
+
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Projet 1</h3>
+                <p>Description courte de ce que vous avez réalisé dans ce projet et les technologies utilisées.</p>
+                <a href="#">Voir sur GitHub →</a>
+            </div>
+            <div class="project-card">
+                <h3>Projet 2</h3>
+                <p>Une application web dynamique créée pour résoudre un problème spécifique.</p>
+                <a href="#">Voir sur GitHub →</a>
+            </div>
+            <div class="project-card">
+                <h3>Projet 3</h3>
+                <p>Analyse de données ou projet personnel utilisant Python/React.</p>
+                <a href="#">Voir sur GitHub →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="a-propos" style="background: #fff;">
+        <h2>À propos</h2>
+        <p>Expliquez ici brièvement votre parcours, vos compétences clés (JavaScript, HTML, CSS, SQL, etc.) et ce que vous recherchez comme opportunités.</p>
+    </section>
+
+    <footer id="contact">
+        <p>Me contacter : mon.email@exemple.com</p>
+        <p>© 2025 [Ton Nom] - Réalisé pour mon dépôt GitHub</p>
+    </footer>
+
+</body>
+</html>
