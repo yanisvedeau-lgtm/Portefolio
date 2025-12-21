@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>Portfolio de Yanis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    /* Reset */
+    /* -------------------- RESET -------------------- */
     * {
       margin: 0;
       padding: 0;
@@ -13,109 +14,156 @@
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f5f7fa;
       color: #333;
       line-height: 1.6;
     }
 
+    /* -------------------- HEADER -------------------- */
     header {
-      background-color: #1e293b;
+      background-color: #0f172a;
       color: white;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
     header h1 {
       font-size: 24px;
+      font-weight: 600;
     }
 
     nav a {
       color: white;
-      margin-left: 20px;
+      margin-left: 25px;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 15px;
+      transition: 0.2s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #38bdf8;
     }
 
+    /* -------------------- HERO -------------------- */
     .hero {
-      background: linear-gradient(to right, #3b82f6, #1e40af);
+      background: linear-gradient(to right, #1e3a8a, #3b82f6);
       color: white;
-      padding: 80px 20px;
+      padding: 100px 20px;
       text-align: center;
     }
 
     .hero h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-size: 42px;
+      margin-bottom: 15px;
+      font-weight: 700;
     }
 
     .hero p {
       font-size: 18px;
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 auto 30px;
     }
 
-    .hero a {
+    .btn-primary {
       background-color: #facc15;
       color: #1e293b;
-      padding: 10px 20px;
+      padding: 12px 25px;
+      border-radius: 6px;
       text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
+      font-size: 16px;
+      transition: 0.2s;
     }
 
+    .btn-primary:hover {
+      background-color: #eab308;
+    }
+
+    /* -------------------- SECTIONS -------------------- */
     .section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 60px 20px;
+      max-width: 1100px;
       margin: auto;
     }
 
     .section h3 {
-      font-size: 22px;
+      font-size: 26px;
       margin-bottom: 20px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
+      border-left: 5px solid #3b82f6;
+      padding-left: 10px;
+      font-weight: 600;
     }
 
+    /* -------------------- ABOUT -------------------- */
+    .about-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      font-size: 17px;
+    }
+
+    /* -------------------- PROJECTS -------------------- */
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
 
     .card {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     .card h4 {
       margin-bottom: 10px;
+      font-size: 20px;
+      color: #1e3a8a;
     }
 
+    /* -------------------- CONTACT -------------------- */
     .contact p {
+      font-size: 17px;
       margin: 8px 0;
     }
 
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* -------------------- FOOTER -------------------- */
     footer {
-      background-color: #1e293b;
+      background-color: #0f172a;
       color: white;
       text-align: center;
       padding: 20px;
-      font-size: 14px;
       margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
+  <!-- -------------------- HEADER -------------------- -->
   <header>
     <h1>Portfolio de Yanis</h1>
     <nav>
@@ -125,41 +173,52 @@
     </nav>
   </header>
 
+  <!-- -------------------- HERO -------------------- -->
   <section class="hero">
     <h2>Bienvenue sur mon portfolio</h2>
-    <p>Je suis Yanis, passionné par le développement web, l’administration système et la virtualisation. Découvrez mes projets et mon parcours.</p>
-    <a href="#projects">Voir mes projets</a>
+    <p>Je suis Yanis, étudiant passionné par l’informatique, le développement web et l’administration système. Découvrez mes projets, mon parcours et mes compétences.</p>
+    <a href="#projects" class="btn-primary">Voir mes projets</a>
   </section>
 
+  <!-- -------------------- ABOUT -------------------- -->
   <section id="about" class="section">
     <h3>À propos de moi</h3>
-    <p>Actuellement étudiant, je développe mes compétences en HTML, Git, Linux et gestion de projets. J’aime apprendre par la pratique et résoudre des problèmes concrets.</p>
-  </section>
-
-  <section id="projects" class="section">
-    <h3>Mes projets</h3>
-    <div class="projects">
-      <div class="card">
-        <h4>Portfolio HTML</h4>
-        <p>Site statique hébergé sur GitHub Pages, présentant mon profil et mes projets.</p>
-      </div>
-      <div class="card">
-        <h4>Stage SIO1</h4>
-        <p>Page dédiée à mon stage, avec les tâches réalisées et les compétences acquises.</p>
-      </div>
-      <div class="card">
-        <h4>Expérimentations Linux</h4>
-        <p>Tests de distributions, configuration de services et scripts d’automatisation.</p>
-      </div>
+    <div class="about-box">
+      <p>Je suis étudiant en informatique et je développe mes compétences dans plusieurs domaines : HTML/CSS, Git, Linux, virtualisation et gestion de projets. J’aime apprendre par la pratique et créer des projets concrets.</p>
     </div>
   </section>
 
+  <!-- -------------------- PROJECTS -------------------- -->
+  <section id="projects" class="section">
+    <h3>Mes projets</h3>
+    <div class="projects">
+
+      <div class="card">
+        <h4>Portfolio HTML</h4>
+        <p>Création d’un site web statique pour présenter mon parcours, mes compétences et mes projets. Hébergé via GitHub Pages.</p>
+      </div>
+
+      <div class="card">
+        <h4>Stage SIO1</h4>
+        <p>Page dédiée à mon stage SIO1, avec description des missions réalisées et des compétences acquises.</p>
+      </div>
+
+      <div class="card">
+        <h4>Expérimentations Linux</h4>
+        <p>Tests de distributions Linux, configuration de services, scripts d’automatisation et gestion de machines virtuelles.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- -------------------- CONTACT -------------------- -->
   <section id="contact" class="section contact">
     <h3>Contact</h3>
     <p>Email : <a href="mailto:yanis@example.com">yanis@example.com</a></p>
     <p>GitHub : <a href="https://github.com/yanisvedeau-lgtm" target="_blank">yanisvedeau-lgtm</a></p>
   </section>
 
+  <!-- -------------------- FOOTER -------------------- -->
   <footer>
     &copy; 2025 – Portfolio de Yanis. Tous droits réservés.
   </footer>
