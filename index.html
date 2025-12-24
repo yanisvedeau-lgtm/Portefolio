@@ -2,226 +2,170 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio de Yanis</title>
+  <title>CV – Yanis Vedeau</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-    /* -------------------- RESET -------------------- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: "Segoe UI", sans-serif;
       background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
       color: #333;
-      line-height: 1.6;
     }
 
-    /* -------------------- HEADER -------------------- */
     header {
-      background-color: #0f172a;
+      background-color: #1e293b;
       color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      padding: 40px 20px;
+      text-align: center;
     }
 
     header h1 {
-      font-size: 24px;
-      font-weight: 600;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 25px;
-      text-decoration: none;
-      font-size: 15px;
-      transition: 0.2s;
-    }
-
-    nav a:hover {
-      color: #38bdf8;
-    }
-
-    /* -------------------- HERO -------------------- */
-    .hero {
-      background: linear-gradient(to right, #1e3a8a, #3b82f6);
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 15px;
+      margin: 0;
+      font-size: 36px;
       font-weight: 700;
     }
 
-    .hero p {
+    header p {
       font-size: 18px;
-      max-width: 700px;
-      margin: 0 auto 30px;
+      opacity: 0.8;
     }
 
-    .btn-primary {
-      background-color: #facc15;
-      color: #1e293b;
-      padding: 12px 25px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      transition: 0.2s;
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    .btn-primary:hover {
-      background-color: #eab308;
-    }
-
-    /* -------------------- SECTIONS -------------------- */
-    .section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .section h3 {
-      font-size: 26px;
-      margin-bottom: 20px;
+    h2 {
       border-left: 5px solid #3b82f6;
       padding-left: 10px;
-      font-weight: 600;
+      margin-bottom: 15px;
+      font-size: 24px;
     }
 
-    /* -------------------- ABOUT -------------------- */
-    .about-box {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      font-size: 17px;
-    }
-
-    /* -------------------- PROJECTS -------------------- */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
+    .section {
       background: white;
       padding: 25px;
       border-radius: 10px;
+      margin-bottom: 30px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      transition: 0.2s;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    ul {
+      padding-left: 20px;
     }
 
-    .card h4 {
-      margin-bottom: 10px;
-      font-size: 20px;
-      color: #1e3a8a;
-    }
-
-    /* -------------------- CONTACT -------------------- */
-    .contact p {
-      font-size: 17px;
-      margin: 8px 0;
-    }
-
-    .contact a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    /* -------------------- FOOTER -------------------- */
     footer {
-      background-color: #0f172a;
-      color: white;
       text-align: center;
       padding: 20px;
+      background-color: #1e293b;
+      color: white;
       margin-top: 40px;
-      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- -------------------- HEADER -------------------- -->
-  <header>
-    <h1>Portfolio de Yanis</h1>
-    <nav>
-      <a href="#about">À propos</a>
-      <a href="#projects">Projets</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Yanis Vedeau</h1>
+  <p>Étudiant en informatique – Développement, sécurité & engagement citoyen</p>
+</header>
 
-  <!-- -------------------- HERO -------------------- -->
-  <section class="hero">
-    <h2>Bienvenue sur mon portfolio</h2>
-    <p>Je suis Yanis, étudiant passionné par l’informatique, le développement web et l’administration système. Découvrez mes projets, mon parcours et mes compétences.</p>
-    <a href="#projects" class="btn-primary">Voir mes projets</a>
-  </section>
+<div class="container">
 
-  <!-- -------------------- ABOUT -------------------- -->
-  <section id="about" class="section">
-    <h3>À propos de moi</h3>
-    <div class="about-box">
-      <p>Je suis étudiant en informatique et je développe mes compétences dans plusieurs domaines : HTML/CSS, Git, Linux, virtualisation et gestion de projets. J’aime apprendre par la pratique et créer des projets concrets.</p>
-    </div>
-  </section>
+  <div class="section">
+    <h2>Coordonnées</h2>
+    <ul>
+      <li>Téléphone : 06 04 10 64 97</li>
+      <li>Email : yanis.vedeau@outlook.fr</li>
+      <li>Adresse : 7 Bis rue du collège, Saint Agnant (17620)</li>
+    </ul>
+  </div>
 
-  <!-- -------------------- PROJECTS -------------------- -->
-  <section id="projects" class="section">
-    <h3>Mes projets</h3>
-    <div class="projects">
+  <div class="section">
+    <h2>Profil</h2>
+    <p>Étudiant motivé, patient et persévérant, passionné par l’informatique, le service public et le travail en équipe. Je développe mes compétences techniques tout en m’investissant dans des missions citoyennes et professionnelles.</p>
+  </div>
 
-      <div class="card">
-        <h4>Portfolio HTML</h4>
-        <p>Création d’un site web statique pour présenter mon parcours, mes compétences et mes projets. Hébergé via GitHub Pages.</p>
-      </div>
+  <div class="section">
+    <h2>Compétences</h2>
+    <ul>
+      <li>HTML / CSS / Git / GitHub</li>
+      <li>Linux (Ubuntu, Debian), virtualisation</li>
+      <li>PowerPoint, Word, Teams, Canva, Capcut, Voice Mod</li>
+      <li>Surveillance, accueil, service bar</li>
+    </ul>
+  </div>
 
-      <div class="card">
-        <h4>Stage SIO1</h4>
-        <p>Page dédiée à mon stage SIO1, avec description des missions réalisées et des compétences acquises.</p>
-      </div>
+  <div class="section">
+    <h2>Langues</h2>
+    <ul>
+      <li>Français : natif</li>
+      <li>Anglais : niveau B2</li>
+      <li>Chinois : niveau A2</li>
+    </ul>
+  </div>
 
-      <div class="card">
-        <h4>Expérimentations Linux</h4>
-        <p>Tests de distributions Linux, configuration de services, scripts d’automatisation et gestion de machines virtuelles.</p>
-      </div>
+  <div class="section">
+    <h2>Qualités</h2>
+    <ul>
+      <li>Patient</li>
+      <li>Persévérant</li>
+      <li>Sociable</li>
+      <li>Minutieux</li>
+    </ul>
+  </div>
 
-    </div>
-  </section>
+  <div class="section">
+    <h2>Centres d’intérêt</h2>
+    <ul>
+      <li>Cuisine</li>
+      <li>Échecs</li>
+      <li>Sport</li>
+      <li>Musique</li>
+    </ul>
+  </div>
 
-  <!-- -------------------- CONTACT -------------------- -->
-  <section id="contact" class="section contact">
-    <h3>Contact</h3>
-    <p>Email : <a href="mailto:yanis@example.com">yanis@example.com</a></p>
-    <p>GitHub : <a href="https://github.com/yanisvedeau-lgtm" target="_blank">yanisvedeau-lgtm</a></p>
-  </section>
+  <div class="section">
+    <h2>Formations</h2>
+    <ul>
+      <li>Formation BNSSA en cours – Objectif 2026</li>
+      <li>Certification Pix (357 points) – 2022</li>
+      <li>Terminale STMG – 2022</li>
+      <li>Bac de Français – 2021</li>
+      <li>Diplôme National du Brevet – 2020</li>
+      <li>Permis B</li>
+      <li>PSC1 / PS2 (secourisme)</li>
+      <li>Jeune Sapeur Pompier – fin de formation 2022</li>
+    </ul>
+  </div>
 
-  <!-- -------------------- FOOTER -------------------- -->
-  <footer>
-    &copy; 2025 – Portfolio de Yanis. Tous droits réservés.
-  </footer>
+  <div class="section">
+    <h2>Expériences Professionnelles</h2>
+    <ul>
+      <li>Sapeur-pompier volontaire – Depuis 2025</li>
+      <li>Family Fun Parc – Été 2025 (2 mois) : surveillance trampoline, accueil, service bar</li>
+      <li>Stage – Centre d’incendie et de secours de Rochefort – 2021 & 2022</li>
+      <li>Stage – Salle de sport L’Orange Bleue – 2022 : accueil et fiche client</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Engagements & Bénévolat</h2>
+    <ul>
+      <li>Service National Universel – 2022</li>
+      <li>Bénévole – Festival StéréoParc Rochefort – 2022 (gestion des finances)</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 – Yanis Vedeau. Tous droits réservés.
+</footer>
 
 </body>
 </html>
